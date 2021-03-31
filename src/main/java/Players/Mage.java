@@ -26,4 +26,10 @@ public abstract class Mage extends Player {
     public void castSpell(Enemy enemy) {
         enemy.takeDamage(spell.castSpell());
     }
+
+    public void defend(Enemy enemy) {
+        enemy.takeDamage(creature.defend());
+    }
+
+
 }

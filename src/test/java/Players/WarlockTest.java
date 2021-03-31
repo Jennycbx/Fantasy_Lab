@@ -34,4 +34,9 @@ public class WarlockTest {
         assertEquals(-35, orc.getHealthPoints());
     }
 
+    @Test
+    public void canDefend() {
+        warlock.defend(orc);
+        assertEquals(5, orc.getHealthPoints());
+    }
 }
